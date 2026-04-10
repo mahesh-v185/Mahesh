@@ -58,7 +58,7 @@ export const ExamResult: React.FC<ExamResultProps> = ({ onBack, semesterId = 1 }
         { slNo: 9, code: '73210', name: 'LAB : TALLY', max: 50, min: 20, see: 39, ia: 9, scored: 48, credits: 1, grade: 10, points: 10, letter: 'O', status: 'Pass' },
       ],
       summary: {
-        original: { result: 'PASS', sgpa: '7.35', cgpa: '-', grade: 'A+', promotion: 'Eligible' }
+        original: { result: 'PASS', sgpa: '8.25', cgpa: '-', grade: 'A+', promotion: 'Eligible' }
       }
     },
     3: {
