@@ -7,10 +7,16 @@ import { CourseRegistration } from './components/CourseRegistration';
 import { ExamApplication } from './components/ExamApplication';
 import { ExamResult } from './components/ExamResult';
 import { Footer } from './components/Footer';
+import { Login } from './components/Login';
 
 function App() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [currentView, setCurrentView] = useState<'dashboard' | 'course-registration' | 'exam-applications' | 'exam-result'>('dashboard');
   const [selectedSemesterId, setSelectedSemesterId] = useState<number>(1);
+
+  if (!isAuthenticated) {
+    return <Login onLoginSuccess={() => setIsAuthenticated(true)} />;
+  }
 
   return (
     <div className="min-h-screen bg-[#f4f7f9] text-slate-800">
