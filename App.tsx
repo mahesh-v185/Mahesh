@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { TopHeader } from './components/TopHeader';
 import { Banner } from './components/Banner';
 import { Navbar } from './components/Navbar';
@@ -8,11 +8,26 @@ import { ExamApplication } from './components/ExamApplication';
 import { ExamResult } from './components/ExamResult';
 import { Footer } from './components/Footer';
 import { Login } from './components/Login';
+import { LoadingScreen } from './components/LoadingScreen';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [currentView, setCurrentView] = useState<'dashboard' | 'course-registration' | 'exam-applications' | 'exam-result'>('dashboard');
   const [selectedSemesterId, setSelectedSemesterId] = useState<number>(1);
+  const [isLoading, setIsLoading] = useState(false);
+  const [pendingView, setPendingView] = useState<typeof currentView | null>(null);
+
+  const handleNavigation = (view: typeof currentView) => {
+    if (view !== currentView) {
+      setIsLoading(true);
+      setPendingView(view);
+      setTimeout(() => {
+        setCurrentView(view);
+        setIsLoading(false);
+        setPendingView(null);
+      }, 5000);
+    }
+  };
 
   if (!isAuthenticated) {
     return <Login onLoginSuccess={() => setIsAuthenticated(true)} />;
@@ -22,7 +37,7 @@ function App() {
     <div className="min-h-screen bg-[#f4f7f9] text-slate-800">
       <TopHeader />
       <Banner />
-      <Navbar onNavigate={(view) => setCurrentView(view as any)} />
+      <Navbar onNavigate={handleNavigation} />
       <div className="bg-white py-1 px-4 md:px-12 border-b border-gray-100">
         <div className="max-w-7xl mx-auto flex justify-end">
           <p className="text-[10px] md:text-xs text-gray-600 font-medium">
@@ -34,23 +49,24 @@ function App() {
         {currentView === 'dashboard' ? (
           <Dashboard />
         ) : currentView === 'course-registration' ? (
-          <CourseRegistration onBack={() => setCurrentView('dashboard')} />
+          <CourseRegistration onBack={() => handleNavigation('dashboard')} />
         ) : currentView === 'exam-applications' ? (
           <ExamApplication 
-            onBack={() => setCurrentView('dashboard')} 
+            onBack={() => handleNavigation('dashboard')} 
             onShowResult={(id) => {
               setSelectedSemesterId(id);
-              setCurrentView('exam-result');
+              handleNavigation('exam-result');
             }} 
           />
         ) : (
           <ExamResult 
-            onBack={() => setCurrentView('exam-applications')} 
+            onBack={() => handleNavigation('exam-applications')} 
             semesterId={selectedSemesterId}
           />
         )}
       </main>
       <Footer />
+      {isLoading && <LoadingScreen message={`Loading ${pendingView}...`} />}
     </div>
   );
 }
