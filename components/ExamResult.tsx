@@ -71,10 +71,10 @@ export const ExamResult: React.FC<ExamResultProps> = ({ onBack, semesterId = 1 }
         { slNo: 3, code: '71309', name: 'Database Management Systems', max: 100, min: 40, see: 50, ia: 10, scored: 60, credits: 4, grade: 6, points: 24, letter: 'A', status: 'Pass' },
         { slNo: 4, code: '71310', name: 'C# and .NET Framework', max: 100, min: 40, see: 47, ia: 10, scored: 57, credits: 4, grade: 5.7, points: 22.8, letter: 'B+', status: 'Pass' },
         { slNo: 5, code: '71311', name: 'Computer Communication and Networks', max: 100, min: 40, see: 40, ia: 18, scored: 58, credits: 4, grade: 5.8, points: 23.2, letter: 'B+', status: 'Pass' },
-        { slNo: 6, code: '71312', name: 'Computer Science Elective 1 - Web Content Management System', max: 50, min: 20, see: 28, ia: 10, scored: 38, credits: 2, grade: 7.6, points: 15.2, letter: 'A+', status: 'Pass' },
-        { slNo: 7, code: '73308', name: 'LAB - DBMS', max: 50, min: 20, see: 40, ia: 10, scored: 50, credits: 1, grade: 10, points: 10, letter: 'O', status: 'Pass' },
-        { slNo: 8, code: '73309', name: 'LAB - C and .NET Framework', max: 50, min: 20, see: 40, ia: 8, scored: 48, credits: 1, grade: 9.6, points: 9.6, letter: 'O', status: 'Pass' },
-        { slNo: 9, code: '73310', name: 'LAB - Computer Networks', max: 50, min: 20, see: 40, ia: 10, scored: 50, credits: 1, grade: 10, points: 10, letter: 'O', status: 'Pass' },
+        { slNo: 6, code: '71312', name: 'Computer Science Elective 1 - Web Content Management System', max: 50, min: 20, see: 28, ia: 10, scored: 37, credits: 2, grade: 7.6, points: 15.2, letter: 'A+', status: 'Pass' },
+        { slNo: 7, code: '73308', name: 'LAB - DBMS', max: 50, min: 20, see: 40, ia: 10, scored: 37, credits: 1, grade: 9.2, points: 9.2, letter: 'A', status: 'Pass' },
+        { slNo: 8, code: '73309', name: 'LAB - C and .NET Framework', max: 50, min: 20, see: 40, ia: 8, scored: 40, credits: 1, grade: 8.4, points: 8.4, letter: 'A', status: 'Pass' },
+        { slNo: 9, code: '73310', name: 'LAB - Computer Networks', max: 50, min: 20, see: 40, ia: 10, scored: 37, credits: 1, grade: 9.2, points: 9.2, letter: 'A', status: 'Pass' },
       ],
       summary: {
         original: { result: 'PASS', sgpa: '6.57', cgpa: '7.36', grade: 'A' }
