@@ -84,7 +84,7 @@ export const CourseRegistration: React.FC<CourseRegistrationProps> = ({ onBack }
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 text-sm">
                 <div>
                   <label className="text-gray-500">Student Reg No : </label>
-                  <strong className="text-[#07294d]"> U24AN24S0084 </strong>
+                  <strong className="text-[#07294d]"> U24AN24S0017 </strong>
                 </div>
                 <div>
                   <label className="text-gray-500">Student Name : </label>
@@ -171,7 +171,7 @@ export const CourseRegistration: React.FC<CourseRegistrationProps> = ({ onBack }
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 text-sm">
               <div>
                 <label className="text-gray-500">Student Reg No : </label>
-                <strong className="text-[#07294d]"> U24AN24S0084 </strong>
+                <strong className="text-[#07294d]"> U24AN24S0017 </strong>
               </div>
               <div>
                 <label className="text-gray-500">Student Name : </label>

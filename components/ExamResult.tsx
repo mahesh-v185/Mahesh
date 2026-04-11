@@ -63,7 +63,7 @@ export const ExamResult: React.FC<ExamResultProps> = ({ onBack, semesterId = 1 }
     },
     3: {
       examMonth: 'UG SEP JAN FEB 2026',
-      publishedOn: '10-03-26 AT 14:44',
+      publishedOn: '04-04-26 AT 14:44',
       term: 'III',
       original: [
         { slNo: 1, code: '71301', name: 'Language English - III', max: 100, min: 40, see: 50, ia: 15, scored: 65, credits: 3, grade: 7, points: 21, letter: 'A+', status: 'Pass' },
@@ -143,7 +143,7 @@ export const ExamResult: React.FC<ExamResultProps> = ({ onBack, semesterId = 1 }
               </div>
               <div>
                 <label className="text-gray-500 block mb-1">Student Reg No:</label>
-                <strong className="text-[#07294d]">U24AN24S0084</strong>
+                <strong className="text-[#07294d]">U24AN24S0017</strong>
               </div>
               <div>
                 <label className="text-gray-500 block mb-1">Student Name:</label>
