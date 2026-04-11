@@ -63,21 +63,21 @@ export const ExamResult: React.FC<ExamResultProps> = ({ onBack, semesterId = 1 }
     },
     3: {
       examMonth: 'UG SEP JAN FEB 2026',
-      publishedOn: '04-04-26 AT 14:44',
+      publishedOn: '07 -04-26 AT 14:44',
       term: 'III',
       original: [
-        { slNo: 1, code: '71301', name: 'Language English - III', max: 100, min: 40, see: 50, ia: 15, scored: 65, credits: 3, grade: 7, points: 21, letter: 'A+', status: 'Pass' },
-        { slNo: 2, code: '71302', name: 'ಕನ್ನಡ ಭಾಷಾ ಪತ್ರಿಕೆ -3', max: 100, min: 40, see: 50, ia: 19, scored: 69, credits: 3, grade: 7, points: 21, letter: 'A+', status: 'Pass' },
-        { slNo: 3, code: '71309', name: 'Database Management Systems', max: 100, min: 40, see: 50, ia: 10, scored: 60, credits: 4, grade: 6.5, points: 26, letter: 'A+', status: 'Pass' },
-        { slNo: 4, code: '71310', name: 'C# and .NET Framework', max: 100, min: 40, see: 47, ia: 20, scored: 67, credits: 4, grade: 7, points: 28, letter: 'A+', status: 'Pass' },
-        { slNo: 5, code: '71311', name: 'Computer Communication and Networks', max: 100, min: 40, see: 40, ia: 18, scored: 58, credits: 4, grade: 6, points: 24, letter: 'A', status: 'Pass' },
-        { slNo: 6, code: '71312', name: 'Computer Science Elective 1 - Web Content Management System', max: 50, min: 20, see: 28, ia: 10, scored: 38, credits: 2, grade: 8, points: 16, letter: 'A++', status: 'Pass' },
+        { slNo: 1, code: '71301', name: 'Language English - III', max: 100, min: 40, see: 50, ia: 15, scored: 65, credits: 3, grade: 6.5, points: 19.5, letter: 'A', status: 'Pass' },
+        { slNo: 2, code: '71302', name: 'ಕನ್ನಡ ಭಾಷಾ ಪತ್ರಿಕೆ -3', max: 100, min: 40, see: 50, ia: 12, scored: 62, credits: 3, grade: 6.2, points: 18.6, letter: 'A', status: 'Pass' },
+        { slNo: 3, code: '71309', name: 'Database Management Systems', max: 100, min: 40, see: 50, ia: 10, scored: 60, credits: 4, grade: 6, points: 24, letter: 'A', status: 'Pass' },
+        { slNo: 4, code: '71310', name: 'C# and .NET Framework', max: 100, min: 40, see: 47, ia: 10, scored: 57, credits: 4, grade: 5.7, points: 22.8, letter: 'B+', status: 'Pass' },
+        { slNo: 5, code: '71311', name: 'Computer Communication and Networks', max: 100, min: 40, see: 40, ia: 18, scored: 58, credits: 4, grade: 5.8, points: 23.2, letter: 'B+', status: 'Pass' },
+        { slNo: 6, code: '71312', name: 'Computer Science Elective 1 - Web Content Management System', max: 50, min: 20, see: 28, ia: 10, scored: 38, credits: 2, grade: 7.6, points: 15.2, letter: 'A+', status: 'Pass' },
         { slNo: 7, code: '73308', name: 'LAB - DBMS', max: 50, min: 20, see: 40, ia: 10, scored: 50, credits: 1, grade: 10, points: 10, letter: 'O', status: 'Pass' },
-        { slNo: 8, code: '73309', name: 'LAB - C and .NET Framework', max: 50, min: 20, see: 40, ia: 8, scored: 48, credits: 1, grade: 10, points: 10, letter: 'O', status: 'Pass' },
+        { slNo: 8, code: '73309', name: 'LAB - C and .NET Framework', max: 50, min: 20, see: 40, ia: 8, scored: 48, credits: 1, grade: 9.6, points: 9.6, letter: 'O', status: 'Pass' },
         { slNo: 9, code: '73310', name: 'LAB - Computer Networks', max: 50, min: 20, see: 40, ia: 10, scored: 50, credits: 1, grade: 10, points: 10, letter: 'O', status: 'Pass' },
       ],
       summary: {
-        original: { result: 'PASS', sgpa: '7.22', cgpa: '7.36', grade: 'A+' }
+        original: { result: 'PASS', sgpa: '6.57', cgpa: '7.36', grade: 'A' }
       }
     }
   };
